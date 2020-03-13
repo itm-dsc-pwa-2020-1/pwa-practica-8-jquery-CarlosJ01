@@ -1,0 +1,320 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Grid-Contener{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    padding: 1em;
+}
+
+.Grid-Contener > div{
+  border: #990E00 5px solid;
+}
+.Grid-Contener > div > h2{
+  background-color: #990E00;
+  color: white;
+  padding: 1em;
+}
+header{
+  background-color: #990E00;
+  color: white;
+  grid-column: 1/-1;
+  grid-row: 1;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em 0em;
+}
+
+.Menu{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Menu > ul{
+  list-style:none;
+  margin: auto;
+  padding: 1em 40%;
+}
+.Menu > ul li{
+  display:inline;
+}
+.Menu > ul li a{
+  color:#ffffff;
+  background:#990E00;
+  margin-right:5px;
+  font-weight:bold;
+  font-size:12px;
+  font-family:verdana;
+  text-decoration:none;
+  display:block;
+  width:100px;
+  height:25px;
+  line-height:25px;
+  text-align:center;
+  border-radius: 5px;
+  border: 1px solid #560E00;
+}
+.Menu > ul li a:hover
+{
+  color:#cccccc;
+  background:#560E00;
+  font-weight:bold;
+  text-decoration:none;
+  display:block;
+  width:100px;
+  text-align:center;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+.Menu > ul li.sublinks a{
+  color:#000000;
+  background:#f6f6f6;
+  border-bottom:1px solid #cccccc;
+  font-weight:normal;
+  text-decoration:none;
+  display:block;
+  width:100px;
+  text-align:center;
+  margin-top:2px;
+}
+.Menu > ul li.sublinks a:hover{
+  color:#000000;
+  background:#FFEFC6;
+  font-weight:normal;
+  text-decoration:none;
+  display:block;
+  width:100px;
+  text-align:center;
+}
+.Menu > ul li.sublinks{
+	display:none;
+}
+.Menu > #container{
+  margin:0px auto;
+  width:570px;
+}
+.Menu > .clear{
+  clear:both;
+}
+.Menu > .left{
+  float:left;
+}
+.Menu > .right{
+  float:right;
+}
+
+.Slider{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Slider > #slidebox{
+  position:relative; 
+  border:1px solid #ccc; 
+  margin:40px auto;
+  overflow:hidden;
+}
+.Slider > #slidebox, .Slider > #slidebox ul, .Slider > #slidebox ul li{
+  width:600px;
+  height:300px;
+}
+.Slider > #slidebox ul li{
+  position:relative; 
+  left:0; 
+  background:#eee; 
+  float:left;
+  list-style: none; 
+  font-size:13px;
+}
+.Slider > #slidebox ul li > img{
+  width: 100%;
+  height: 100%;
+}
+.Slider > #slidebox .next, .Slider > #slidebox .previous{
+  position:absolute; 
+  z-index:2; 
+  display:block; 
+  width:21px; 
+  height:21px;
+  top:139px;
+}
+.Slider > #slidebox .next{
+  right:0; 
+  margin-right:10px; 
+  background:url(img/slidebox_next.png) no-repeat left top;
+}
+.Slider > #slidebox .next:hover{
+  background:url(img/slidebox_next_hover.png) no-repeat left top;
+}
+.Slider > #slidebox .previous{
+  margin-left:10px; 
+  background:url(img/slidebox_previous.png) no-repeat left top;
+}
+.Slider > #slidebox .previous:hover{
+  background:url(img/slidebox_previous_hover.png) no-repeat left top;
+}
+.Slider > #slidebox .thumbs{
+  position:absolute; 
+  z-index:2; 
+  bottom:10px; 
+  right:10px;
+}
+.Slider > #slidebox .thumbs a{
+  display:block; 
+  margin-left:5px; 
+  float:left; 
+  font-size:9px; 
+  text-decoration:none; 
+  padding:2px 4px; 
+  background:url(img/slidebox_thumb.png); 
+  color:#fff;
+}
+.Slider > #slidebox .thumbs a:hover{
+  background:#fff; 
+  color:#000;
+}
+.Slider > #slidebox .thumbs .thumbActive{
+  background:#fff; 
+  color:#000; 
+  display:block; 
+  margin-left:5px; 
+  float:left; 
+  font-size:9px; 
+  text-decoration:none; 
+  padding:2px 4px;
+}
+
+.Contenido{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Contenido > button{
+  margin: 1em;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  background: none;
+  border-radius: 6px;
+  border: 2px solid #990E00;
+  cursor: pointer;
+}
+.Contenido > button:hover{
+  color: white;
+  background-color: #990E00;
+}
+.Contenido > .Cargar{
+  width: 100%;
+  text-align: center;
+}
+.Contenido > .Cargar > img{
+  margin: 20px;
+}
+.Contenido > .Cargar > p{
+  text-align: left;
+  padding: 1em;
+}
+
+.Ajax{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Ajax > button{
+  margin: 1em;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  background: none;
+  border-radius: 6px;
+  border: 2px solid #990E00;
+  cursor: pointer;
+}
+.Ajax > button:hover{
+  color: white;
+  background-color: #990E00;
+}
+.Ajax > div > ul{
+  list-style:none;
+  margin: 1em auto;
+}
+
+.Efecto{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Efecto > .pics {  
+  height:  232px;  
+  width:   232px;  
+  padding: 0;
+  position: relative;
+  margin:  auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.Efecto > .pics img {  
+  padding: 15px;  
+  border:  1px solid #ccc;  
+  background-color: #eee;
+  position: absolute;
+  z-index: 3;
+  width:  200px; 
+  height: 200px; 
+  top:  0; 
+  left: 0 
+}
+
+.Otro{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Otro > img{
+  margin: 3em auto;
+}
+.Otro > .Botones{
+  margin: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.Otro > .Botones > button{
+  margin: 0em 3em;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+  background: none;
+  border-radius: 6px;
+  border: 2px solid #990E00;
+  cursor: pointer;
+}
+.Otro > .Botones > button:hover{
+  color: white;
+  background-color: #990E00;
+}
+
+footer{
+  grid-column: 1/-1;
+  grid-row: 5;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3em 0em;
+  background-color: #990E00;
+  color: white;
+}

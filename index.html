@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- JQuery -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+
+        <!-- Librerias Externas -->
+        <script src="js/jCarouselLite.js"></script>
+        <script src="js/jquery.cycle.lite.js"></script>
+
+        <!-- Funciones y CSS -->
+        <link rel="stylesheet" href="style.css">
+        <script src="js/funciones.js"></script>
+
+        <title>JQuery</title>
+    </head>
+    <body>
+        <div class="Grid-Contener">
+            <header>
+                <h1>Ejemplos de JQuery</h1>
+            </header>
+
+             <div class="Menu">
+                <h2>Menu con Botones</h2>
+                <ul>
+                    <li><a href="#" class="dropdown">Menu</a></li>
+                    <li class="sublinks">
+                        <a href="#">Boton 1</a>
+                        <a href="#">Boton 2</a>
+                        <a href="#">Boton 3</a>
+                        <a href="#">Boton 4</a>
+                        <a href="#">Boton 5</a>
+                    </li>
+                </ul>
+             </div>
+
+             <div class="Slider">
+                <h2>Slider</h2>
+                <div id="slidebox">
+                    <div class="next"></div>
+                    <div class="previous"></div>
+                    <div class="thumbs">
+                        <a href="#" onClick="" class="1 thumbActive">1</a> 
+                        <a href="#" onClick="" class="2">2</a> 
+                        <a href="#" onClick="" class="3 ">3</a> 
+                        <a href="#" onClick="" class="4">4</a> 
+                    </div>
+                    <ul>
+                        <li id="1"><img src="img/html5.png" alt="html_5"></li>
+                        <li id="2"><img src="img/CSS3.jpg" alt="CSS_3"></li>
+                        <li id="3"><img src="img/JS.png" alt="JS"></li>
+                        <li id="4"><img src="img/PHP.svg" alt="php"></li>
+                    </ul>
+                </div>
+             </div>
+
+             <div class="Contenido">
+                <h2>Cargar Contenido</h2>
+                <button id="Cargar">Cargar</button>
+             </div>
+             <div class="Ajax">
+                <h2>Peticion AJAX</h2>
+                <button id="petAjax">Peticion</button>
+                <div id="RespuestaAjax">
+                </div>
+             </div>
+
+             <div class="Efecto">
+                <h2>Efecto de Transicion</h2>
+                <div class="pics" id="imagenes"> 
+                    <img src="img/html5.png" width="200" height="200" /> 
+                    <img src="img/CSS3.jpg" width="200" height="200" /> 
+                    <img src="img/JS.png" width="200" height="200" /> 
+                </div> 
+             </div>
+             
+             <div class="Otro">
+                <h2>Ejemplo Slide</h2>
+                <img src="img/JQuery.png" alt="jQuery" id="imgSli">
+                <div class="Botones">
+                    <button id="mostrar">Mostrar</button>
+                    <button id="ocultar">Ocultar</button>
+                </div>
+             </div>
+             
+             <footer>
+                <h3>Programacion Web Avanzada - Practica 08 - JQuery - Carlos Jahir Castro Cázares - 17120151</h3>
+             </footer>
+        </div>
+    </body>
+</html>
